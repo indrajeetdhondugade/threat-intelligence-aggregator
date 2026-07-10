@@ -17,13 +17,13 @@ Given raw IOC feeds in **TXT, CSV, and JSON** formats, the tool:
 - Correlates indicators across multiple feeds
 - Calculates a transparent, explainable **0–100 risk score** for each one
 - Generates **21 deployment-ready blocklist files** across 7 categories
-- Produces a professional **TXT / JSON / HTML** threat intelligence report — including a self-contained SOC dashboard
+- Produces a professional **TXT / JSON / HTML** threat intelligence report including a self-contained SOC dashboard
 
 **Runtime:** 0.07 seconds for a full 4-feed, 30-IOC pipeline run.
 ## ✨ Features
 
 ### Feed Processing
-- Automatic format detection — TXT, CSV, JSON
+- Automatic format detection TXT, CSV, JSON
 - Comment and empty-line filtering
 - Handles messy real-world data (private IPs, duplicates, junk entries) without crashing
 
@@ -34,7 +34,7 @@ Given raw IOC feeds in **TXT, CSV, and JSON** formats, the tool:
 - URL cleaning (strips trailing punctuation)
 
 ### Correlation & Risk Scoring
-- Cross-feed correlation — tracks which sources reported each IOC
+- Cross-feed correlation tracks which sources reported each IOC
 - Transparent 3-factor scoring formula (0–100): source frequency + IOC type weight + keyword severity
 - Score labels: LOW / MEDIUM / HIGH / CRITICAL
 
