@@ -1,0 +1,33 @@
+# Feed 4 - Messy Real-World Data (Edge Case Testing)
+# Source: OSINT Feed D
+
+# Some valid IOCs
+185.220.101.45
+malware-site.com
+attacker@evil-domain.com
+
+# Intentional duplicates (should be handled)
+malware-site.com
+185.220.101.45
+
+# Private IPs (should be filtered out)
+192.168.1.1
+10.0.0.1
+127.0.0.1
+
+# Empty lines below (should be skipped)
+
+
+
+# Invalid/junk entries (should be skipped)
+notanip
+hello world
+!!!###
+
+# New valid IOCs not seen before
+ransomware-drop.net
+exploit-kit.io
+5f4dcc3b5aa765d61d8327deb882cf99
+
+# URL
+http://exploit-kit.io/payload.exe

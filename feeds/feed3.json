@@ -1,0 +1,13 @@
+{
+  "feed_name": "OSINT Feed C",
+  "indicators": [
+    {"type": "ip", "value": "192.168.1.100", "severity": "high"},
+    {"type": "ip", "value": "10.0.0.5", "severity": "medium"},
+    {"type": "domain", "value": "malware-site.com", "severity": "high"},
+    {"type": "domain", "value": "evil-botnet.net", "severity": "critical"},
+    {"type": "url", "value": "http://phishing-login.net/steal", "severity": "critical"},
+    {"type": "hash", "value": "d41d8cd98f00b204e9800998ecf8427e", "severity": "medium"},
+    {"type": "email", "value": "attacker@evil-domain.com", "severity": "medium"},
+    {"type": "ip", "value": "203.0.113.99", "severity": "medium"}
+  ]
+}

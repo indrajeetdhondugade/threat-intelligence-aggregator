@@ -1,0 +1,11 @@
+type,indicator,severity,description
+ip,192.168.1.100,high,Known C2 server
+ip,185.220.101.45,high,Tor exit node
+domain,malware-site.com,high,Malware distribution
+url,http://phishing-login.net/steal,critical,Phishing page
+hash,d41d8cd98f00b204e9800998ecf8427e,medium,Suspicious file hash
+ip,203.0.113.99,medium,Port scanner
+domain,bad-domain.ru,high,Botnet C2
+email,attacker@evil-domain.com,medium,Phishing sender
+hash,5d41402abc4b2a76b9719d911017c592,high,Known malware hash
+domain,trojan-download.xyz,critical,Trojan dropper
