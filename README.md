@@ -1,6 +1,6 @@
 # 🛡️ Threat Intelligence Aggregator (Non-AI)
 
-**A Python-based Blue Team / SOC toolkit that automates the full threat intelligence pipeline — from raw feed ingestion to deployment-ready blocklists and reports.**
+**A Python-based Blue Team / SOC toolkit that automates the full threat intelligence pipeline from raw feed ingestion to deployment-ready blocklists and reports.**
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -10,7 +10,7 @@
 
 ## 📋 Overview
 
-Security Operations Centres (SOCs) receive Indicators of Compromise (IOCs) from dozens of sources daily — in inconsistent formats, with duplicates, and with no built-in way to prioritise what actually matters. This project solves that problem with a fully automated, rule-based Python pipeline.
+Security Operations Centres (SOCs) receive Indicators of Compromise (IOCs) from dozens of sources daily in inconsistent formats, with duplicates, and with no built-in way to prioritise what actually matters. This project solves that problem with a fully automated, rule-based Python pipeline.
 
 Given raw IOC feeds in **TXT, CSV, and JSON** formats, the tool:
 - Extracts and validates 5 IOC types (IP, domain, URL, hash, email)
