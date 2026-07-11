@@ -109,6 +109,7 @@ cd threat-intelligence-aggregator
 ### 2. Run the pipeline
 ```bash
 python main.py
+```
 
 That's it, no `pip install` required for core functionality. The `feeds/` folder already contains sample IOC feeds (TXT, CSV, JSON) so the pipeline runs out of the box.
 
