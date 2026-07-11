@@ -122,3 +122,37 @@ Open `output/reports/*.html` in any browser to view the dashboard.
 
 ### 4. Use your own feeds
 Drop your own IOC feed files (`.txt`, `.csv`, or `.json`) into the `feeds/` folder and re-run `python main.py` — format detection is automatic.
+
+## 📊 Sample Output
+
+Running `python main.py` on the included sample feeds produces results like this:
+
+### Console Summary
+```
+Loading feeds...
+  ✓ feed1.txt   (TXT)
+  ✓ feed2.csv   (CSV)
+  ✓ feed3.json  (JSON)
+  ✓ feed4.txt   (TXT)
+
+Parsing IOCs...        30 IOCs extracted
+Correlating...          15 correlations found
+Risk scoring...         6 CRITICAL | rest scored LOW–HIGH
+Generating blocklists... 21 files across 7 categories
+Generating reports...    TXT, JSON, HTML dashboard
+
+Done in 0.07s
+```
+
+### Reports Generated
+| Output | Location | Format |
+|---|---|---|
+| Text report | `output/reports/report.txt` | Plain text summary |
+| JSON report | `output/reports/report.json` | Machine-readable, for integration into other tools |
+| HTML dashboard | `output/reports/dashboard.html` | Visual SOC-style dashboard — open in any browser |
+
+### Blocklists Generated
+21 blocklist files are generated across 7 categories (e.g. malicious IPs, phishing domains, malware hashes), in TXT/CSV/JSON so they can be dropped straight into a firewall, SIEM, or other blocklist-consuming tool.
+
+> Screenshot of the HTML dashboard: 
+<img width="1919" height="914" alt="Day15_html_dashboard_top 1" src="https://github.com/user-attachments/assets/014e2228-9172-4ce5-87f8-d816e65504cc" />
