@@ -1,6 +1,6 @@
 # 🛡️ Threat Intelligence Aggregator (Non-AI)
 
-**A Python-based Blue Team / SOC toolkit that automates the full threat intelligence pipeline from raw feed ingestion to deployment-ready blocklists and reports.**
+**A Python-based Blue Team / SOC toolkit that automates the full threat intelligence pipeline from raw feed ingestion to deployment-ready blocklists and reports. ****
 
 ![Python](https://img.shields.io/badge/Python-3.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -94,3 +94,30 @@ No frameworks. No paid APIs. No pip install for core functionality. This runs on
     └── README.md
 
 **Pipeline flow:** `main.py` → `feed_loader` → `ioc_parser` → `normalizer` → `correlator` → `blocklist_gen` + `reporter`
+## 🚀 How to Run
+
+### Prerequisites
+- Python 3.10 or higher installed ([python.org/downloads](https://www.python.org/downloads/))
+- No other installations needed — this project only uses Python's standard library
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/indrajeetdhondugade/threat-intelligence-aggregator.git
+cd threat-intelligence-aggregator
+```
+
+### 2. Run the pipeline
+```bash
+python main.py
+
+That's it, no `pip install` required for core functionality. The `feeds/` folder already contains sample IOC feeds (TXT, CSV, JSON) so the pipeline runs out of the box.
+
+### 3. Check the results
+After running, a new `output/` folder is created (not committed to the repo) containing:
+- `output/blocklists/` 21 blocklist files across 7 categories, in TXT/CSV/JSON
+- `output/reports/` a TXT report, a JSON report, and a self-contained HTML SOC dashboard
+
+Open `output/reports/*.html` in any browser to view the dashboard.
+
+### 4. Use your own feeds
+Drop your own IOC feed files (`.txt`, `.csv`, or `.json`) into the `feeds/` folder and re-run `python main.py` — format detection is automatic.
